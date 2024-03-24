@@ -53,3 +53,19 @@ for (let i = 0; i < givenString.length; i++) {
     }
 }
 console.log(givenString);
+
+
+
+//  Task-5:
+
+let lowerCase = "capitalize every first Letter of each word in a string"
+
+console.log(lowerCase);
+let words = lowerCase.split(" ");
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+}
+
+console.log(words.join(" "));
+
+
