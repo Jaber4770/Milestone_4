@@ -68,7 +68,7 @@ let myObject = {
 };
 
 for (property in myObject) {
-    console.log(property, ":", myObject[property]);
+    console.log(property, ":", myObject[property], "|" , typeof(property));
     // console.log(myObject.property)
 }
 
