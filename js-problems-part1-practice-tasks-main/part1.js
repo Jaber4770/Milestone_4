@@ -54,6 +54,50 @@ console.log(vowelCounting(string));
 
 
 
+// ### Task-4: 
+
+
+function wordChecker(longSentense) {
+    let longWord = "";
+    let words = longSentense.split(' ');
+    let longWordIs = words[0];
+    for (word of words) {
+        if(longWordIs.length < word.length){
+            longWordIs = word;
+        }
+    }
+    longWord = longWordIs;
+    return longWord;
+
+}
+
+let longSentense = 'I am learning Programming to become a programmer';
+console.log(wordChecker(longSentense));
+
+
+
+/* ### Task-5: 
+Generate a random number between 10 to 20. */
+
+
+function randonNumber(){
+    let integar = Math.ceil(Math.random() * 10) + 10;
+    return integar;
+}
+
+console.log(randonNumber());
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
